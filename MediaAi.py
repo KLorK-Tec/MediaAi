@@ -80,7 +80,7 @@ while True:
 
 
 if sas:
-    with open('GesData/Codata.json', 'x') as jsf:# you should replace Codata name with the gesture you want to save the coordinates for.
+    with open('GesData/peace2.json', 'x') as jsf:# you should replace Codata name with the gesture you want to save the coordinates for.
         jsf.write(json.dumps(sas,indent=4))
         print('saved states')
 cap.release()
