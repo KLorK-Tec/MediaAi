@@ -1,9 +1,16 @@
+# What is this project?
+This is a program for recognizing hand gestures, and you are able to save coordinates of hand joints for extracting data if you like (by pressing 'f'). You can quit using 'q'.
 
-This a program for recognizing hand gestures and you are able to save coordinations of hand joints for extracting data if you like(By pressing f).
-you can quit using(q).
+# What is it going to turn into
+Since this is a solo project for me and a kind of show-off of my knowledge, I'm going to have to have my approach to solving which I will explain.
 
-In future I'll be making an model and train it around example data like the ones that is already peresent in GesData.
-Right now it is in json but i might convert it to csv format.
+# The First Approach
+My first idea is to use MediaPipe to recognize the hand with coordinate data so I can extract coordinates and train the model around that data to recognize hand gestures.
+For that, I first made the vision part using OpenCV and MediaPipe (Google library and framework). After I was done with that, I went and implemented my own way of saving coordinates to a JSON file (for convenience and ease of use in case of using an API).
+I couldn't just put the coordinates into the model raw, so I had to normalize and transform it. For that, I also did some pattern checking, and with some insights, I also implemented that.
+So the only thing that is left is to make the model for it.
 
-You should checkout my other program in this project(normalizer) that transforms raw coordinates to vecctor data based on heuristics so you can understand what can we do with this kinda data.
-Any help for saving coordinations data for diffrent gestures is appriciated. 
+# What about the model?
+I do know how to work with TensorFlow and Keras (thanks to Kaggle), but I'm still thinking about how I should get an output from a model.
+
+Any help for saving coordinate data for different gestures is appreciated.
