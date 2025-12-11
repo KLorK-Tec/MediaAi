@@ -10,7 +10,6 @@ For that, I first made the vision part using OpenCV and MediaPipe (Google librar
 I couldn't just put the coordinates into the model raw, so I had to normalize and transform it. For that, I also did some pattern checking, and with some insights, I also implemented that.
 So the only thing that is left is to make the model for it.
 
-# What about the model?
-I do know how to work with TensorFlow and Keras (thanks to Kaggle), but I'm still thinking about how I should get an output from a model.
-
-Any help for saving coordinate data for different gestures is appreciated.
+# The model and an Update
+Edit2:
+The model is there now (also available in code) so only thing left to do is to implement it in the Media cam ai.
